@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 
+import logo from '../../../assets/header/logo2.png';
+
 import styles from './styles.module.scss';
 
 export const Header = () => {
@@ -7,7 +9,9 @@ export const Header = () => {
     <div className={styles.wrapper}>
       <div className={styles.logo}>
         <div>
-          <img src="" alt="логотип" />
+          <Link to='/'>
+            <img src={logo} alt="логотип" />
+          </Link>
         </div>
       </div>
       <div className={styles.content}>
@@ -22,10 +26,10 @@ export const Header = () => {
         </div>
         <div className={styles.downBlock}>
           <input />
-          <Link to={'/'}>Главная</Link>
-          <Link to={'men'}>Мужская</Link>
-          <Link to={'women'}>Женская</Link>
-          <Link to={'children'}>Детская</Link>
+          <Link to='/'>Главная</Link>
+          <Link to='men'>Мужская</Link>
+          <Link to='women'>Женская</Link>
+          <Link to='children'>Детская</Link>
           <div>Тел: 8-(000)-000-00-00</div>
         </div>
       </div>
