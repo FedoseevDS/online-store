@@ -1,7 +1,8 @@
 Тестовое задание: реализовать интернет магазин по макету
 
-Стек: TS, React, normalize.css
+Стек: TS, React, Prettier, Eslint
 
 Описание веток:
 
 store-1 - подготовка проекта к работе
+store-2 - установка и настройка Eslint, Prettier
